@@ -14,7 +14,10 @@ export default function About() {
             <div className="w-2 h-2 rounded-full bg-zinc-100"></div>
           </button>
         </div>
-        <div className="w-1/2 h-[65vh] bg-[#889653] rounded-3xl"></div>
+        <div className="w-1/2 h-[65vh]  rounded-3xl">
+  
+        <img className='w-full h-full overflow-hidden object-cover ' src="  https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg" alt="" />
+        </div>
       </div>
     </div>
   );

@@ -10,7 +10,9 @@ export default function LandingPage() {
             <div key={index} className="masker overflow-hidden">
               <div className="w-fit flex items-center">
                 {index === 1 && (
-                  <div className="w-[8.5vw] h-[5.9vw] relative -top-[0.4vw] rounded-md bg-green-500"></div>
+                  <div className="w-[8.5vw] h-[5.9vw] overflow-hidden relative -top-[0.4vw] rounded-md">
+                      <img className='w-full h-full  object-cover' src="https://1tap.co.in/wp-content/uploads/2023/10/Executive-blue-One-B.png " alt="" />
+                  </div>
                 )}
                 <h1 className="pt-[2vw] pb-[3.5vw] -mb-[0.4vw] font-mono text-[9vw] leading-[.35] tracking-tighter font-semibold">
                   {item}
