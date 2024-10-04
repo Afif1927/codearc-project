@@ -1,18 +1,29 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { FaArrowUpLong } from "react-icons/fa6";
 
 export default function LandingPage() {
+
   return (
-    <div className="w-full h-screen bg-zinc-900 pt-1">
+    <div data-scroll data-scroll-section data-scroll-speed="-.3" className="  w-full h-screen bg-zinc-900 pt-1">
       <div className="textstructure mt-52 px-20">
         {["We Create", "Eye Opening", "Presentation"].map((item, index) => {
           return (
             <div key={index} className="masker overflow-hidden">
               <div className="w-fit flex items-center">
                 {index === 1 && (
-                  <div className="w-[8.5vw] h-[5.9vw] overflow-hidden relative -top-[0.4vw] rounded-md">
-                      <img className='w-full h-full  object-cover' src="https://1tap.co.in/wp-content/uploads/2023/10/Executive-blue-One-B.png " alt="" />
-                  </div>
+                  <motion.div
+                  initial={{ rotateY: 0, scale: 0.8, opacity: 0.8 }}
+                  animate={{ rotateY: 180, scale: 1, opacity: 1 }}
+                  transition={{
+                    duration: 2,
+                    ease: [0.42, 0, 0.58, 1], 
+                    repeat: Infinity,        
+                    repeatType: "reverse",    
+                  }}
+                  className="w-[8.5vw] h-[5.9vw] overflow-hidden relative -top-[0.4vw] rounded-md">
+                      <img className='w-full h-full  object-cover' src="https://img.freepik.com/premium-vector/business-card-template-design-vector-illustration_619130-772.jpg?w=740" alt="" />
+                  </motion.div>
                 )}
                 <h1 className="pt-[2vw] pb-[3.5vw] -mb-[0.4vw] font-mono text-[9vw] leading-[.35] tracking-tighter font-semibold">
                   {item}
