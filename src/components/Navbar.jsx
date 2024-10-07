@@ -1,8 +1,15 @@
-import React from 'react';
+import { useState } from "react";
+
+import { FaTimes } from "react-icons/fa";
+import { CiMenuFries } from "react-icons/ci";
 
 export default function Navbar() {
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
   return (
-    <div className="fixed z-[999] w-full px-20 py-8 flex justify-between items-center">
+    <div className="fixed sm:gap-14 z-[999] w-full px-5 py-8 sm:py-3 sm:px-28 flex justify-between items-center bg-slate-900 ">
+
       <div className="logo">
         <svg
           width="72"
@@ -33,7 +40,9 @@ export default function Navbar() {
           ></path>
         </svg>
       </div>
-      <div className="links flex gap-10">
+
+  
+      <div className="hidden md:flex gap-10">
         {["Services", "Our Work", "About Us", "Insights", "Contact"].map(
           (item, index) => (
             <a
@@ -47,8 +56,34 @@ export default function Navbar() {
           )
         )}
       </div>
+
+
+      <div className="md:hidden">
+        <button onClick={handleClick}>
+          {click ? <FaTimes /> : <CiMenuFries />}
+        </button>
+      </div>
+
+  
+      {click && ( 
+       
+
+        <div className="absolute top-16 w-full left-0 right-0 bg-slate-900 text-zinc-100 transition duration-300">
+          {["Services", "Our Work", "About Us", "Insights", "Contact"].map(
+            (item, index) => (
+
+
+
+              <a
+                key={index}
+                className="flex sm:text-lg justify-center items-center my-6 font-mono text-[5vw] font-semibold py-6 border-b border-slate-800 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-indigo-200 duration-300  hover:bg-gradient-to-r from-purple-500 to-pink-500"
+              >
+                {item}
+              </a>
+            )
+          )}
+        </div>
+      )}
     </div>
   );
 }
-
-

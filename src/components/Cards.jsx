@@ -1,24 +1,51 @@
-import React from 'react'
+import React from 'react';
 
 function Cards() {
   return (
-   <div className="w-full h-screen flex items-center px-32 gap-5 bg-zinc-900">
-    <div className="cardcontainer h-[50vh] w-1/2">
-    <div className="card relative w-full rounded-xl h-full flex items-center justify-center bg-[#004D43]">
-        <img className='w-32' src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg" alt="" />
-        <button className='absolute px-5 py-1 rounded-full border-2 left-10 bottom-10'>&copy;2019-22</button>
+    <div className="w-full h-screen flex flex-col sm:flex-row items-center px-5 sm:px-14 gap-5 bg-zinc-900">
+      {/* Card 1 */}
+      <div className="cardcontainer w-full sm:w-1/2 h-[30vh] sm:h-[45vh]  ">
+        <div className="card relative w-full sm:h-[50vh] h-[30vh] rounded-xl flex items-center justify-center bg-[#004D43]  transition-transform duration-400 transform hover:scale-95">
+          <img
+            className="w-20 md:w-32"
+            src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+            alt="Logo 1"
+          />
+          <button className="absolute px-2 text-[3vw] sm:text-xs md:text-xs bottom-5 tracking-tight  rounded-full border-2   ">
+            &copy;2019-22
+          </button>
+        </div>
+      </div>
+
+      {/* Card 2 - Split into two sub-cards */}
+      <div className="cardcontainer flex flex-col md:flex-row w-full sm:w-1/2 h-screen sm:h-[45vh] gap-5">
+      {/* Sub-Card 1 */}
+      <div className="card relative w-full sm:h-[50vh] h-[30vh] transition-transform duration-400 transform hover:scale-95 rounded-xl flex items-center justify-center bg-emerald-700 gap-5">
+          <img
+            className="w-20 md:w-32"
+            src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg"
+            alt="Logo 2"
+          />
+          <button className="absolute px-2 text-[3vw] sm:text-xs md:text-xs bottom-5 tracking-tight  rounded-full border-2    ">
+          Rating 5.00 on clutch
+          </button>
+        </div>
+
+        {/* Sub-Card 2 */}
+        <div className="card relative w-full  sm:h-[50vh] h-[30vh] transition-transform duration-400 transform hover:scale-95 rounded-xl flex items-center justify-center bg-emerald-700 gap-5">
+          <img
+            className="w-20 md:w-32"
+            src="https://ochi.design/wp-content/uploads/2022/04/logo003.png"
+            alt="Logo 2"
+          />
+          <button className="absolute px-2 text-[3vw] sm:text-xs  flex justify-start md:text-xs bottom-5 tracking-tight  rounded-full border-2    ">
+        BOOTCAMP BLEND
+          </button>
+        </div>
+
+      </div>
     </div>
-    </div>
-    <div className="cardcontainer  flex gap-5 w-1/2 h-[50vh] ">
-    <div className="card relative w-1/2  flex items-center justify-center  rounded-xl  h-full bg-[#17413b]">
-    <img className='w-32' src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg" alt="" />
-    <button className='absolute px-5 py-1 rounded-full border-2 left-10 bottom-10'>&copy;2019-22</button></div>
-    <div className="card relative w-1/2   flex items-center justify-center rounded-xl h-full bg-[#17413b]">
-    <img className='w-32' src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg" alt="" />
-    <button className='absolute px-5 py-1 rounded-full border-2 left-10 bottom-10'>&copy;2019-22</button></div>
-    </div>
-   </div>
-  )
+  );
 }
 
-export default Cards
+export default Cards;
