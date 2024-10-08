@@ -7,6 +7,7 @@ import Eyes from './components/Eyes'
 import Featured from './components/Featured'
 import Cards from './components/Cards'
 import Footer from './components/Footer'
+import Hire from './components/Hire'
 import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <Eyes/>
     <Featured/>
     <Cards/>
+    <Hire/>
     <Footer/>
     </div>
   )
