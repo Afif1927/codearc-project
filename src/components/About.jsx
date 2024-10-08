@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div data-scroll data-scroll-speed="-.1" className="w-full p-10 md:p-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black">
 
-  <h1 className="text-[8vw] sm:text-[5vw] md:text-[3.5vw] leading-tight sm:leading-[5vw] md:leading-[3.5vw] font-mono tracking-tight text-center md:text-left">
+  <h1 className="text-[7vw] sm:text-[5vw] font-semibold md:text-[3.5vw] leading-tight sm:leading-[5vw] md:leading-[3.5vw] font-mono tracking-tight text-center md:text-left">
         Ochi is a strategic presentation agency for forward-thinking businesses that need to raise funds, sell products, explain complex ideas, and hire great people.
   </h1>
 

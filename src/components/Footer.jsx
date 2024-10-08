@@ -14,7 +14,9 @@ function Footer() {
             Opening
           </h1>
         </div>
-        <svg
+        <div className="svg pt-5 sm:pb-4">
+              <svg
+              className=" sm:h-[8vw] sm:w-[8vw] transition-transform duration-400 transform hover:scale-125"
           width="72"
           height="30"
           viewBox="0 0 72 30"
@@ -42,6 +44,8 @@ function Footer() {
             fill="currentColor"
           ></path>
         </svg>
+        </div>
+    
       </div>
       
      
@@ -59,7 +63,7 @@ function Footer() {
           )
         )}       
         </div>
- <div className="footer text-white text-sm opacity-25 sm:pt-32">
+ <div className="footer text-white text-sm opacity-25 pt-10 sm:pt-32">
  © ochi design 2024. Legal Terms
 
  </div>

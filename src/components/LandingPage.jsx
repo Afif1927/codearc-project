@@ -6,7 +6,7 @@ export default function LandingPage() {
   return (
     <div data-scroll data-scroll-section data-scroll-speed="-.4" className="w-full h-screen flex flex-col  bg-zinc-900 pt-1">
 
-      <div className=" pt-20 flex flex-col justify-center items-center sm:items-start sm:px-10  my-auto  ">
+      <div className=" pt-20 flex flex-col justify-center items-center sm:items-start sm:px-10 my-24  sm:my-32 md:my-24  ">
         {["We Create", "Eye Opening", "Presentation"].map((item, index) => {
           return (
             <div key={index} className="masker overflow-hidden">
@@ -36,23 +36,23 @@ export default function LandingPage() {
         })}
       </div>
 
-      <div className="border-t-[1px] border-zinc-800 md:mt-20 flex px-5 sm:px-20 flex-col sm:flex-row justify-between items-center  md:items-center py-5 gap-5 sm:gap-0">
+      <div className="border-t-[1px] border-zinc-800  flex px-5  flex-col sm:flex-row justify-between items-center  md:items-center  sm:py-5 gap-5 ">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
         ].map((item, index) => {
           return (
-            <p key={index} className="text-xs sm:text-sm  font-light tracking-tight leading-none text-center ">
+            <p key={index} className="sm:text-sm  font-semibold tracking-tight leading-none text-center ">
               {item}
             </p>
           );
         })}
 
         <div className=" flex flex-col cursor-pointer md:flex-row items-center  gap-3 md:gap-1 ">
-          <div className="px-5 hover:bg-zinc-300 hover:text-black cursor-pointer py-2 border-[2px] border-zinc-500 rounded-full font-light text-xs sm:text-sm uppercase text-center">
+          <div className="px-5 hover:bg-zinc-100 hover:text-black cursor-pointer py-2 border-[2px] border-zinc-500 rounded-full font-semibold text-xs sm:text-sm uppercase text-center">
             Start the project
           </div>
-          <div className="w-8 h-8  hover:bg-zinc-300 hover:text-black  sm:w-10 sm:h-10 border-[2px] border-zinc-500 flex items-center justify-center rounded-full">
+          <div className="w-8 h-8  hover:bg-yellow-300 hover:text-black  sm:w-10 sm:h-10 border-[2px] border-zinc-100 flex items-center justify-center rounded-full">
             <span className="rotate-[45deg]">
               <FaArrowUpLong />
             </span>
