@@ -7,11 +7,11 @@ export default function LandingPage() {
     <div data-scroll data-scroll-section data-scroll-speed="-.4" className="w-full h-screen flex flex-col  bg-zinc-900 pt-1">
 
       <div className=" pt-20 flex flex-col justify-center items-center sm:items-start sm:px-10  my-auto  ">
-        {["Monalisha Thu", "Eye Opening", "Presentation"].map((item, index) => {
+        {["We Create", "Eye Opening", "Presentation"].map((item, index) => {
           return (
             <div key={index} className="masker overflow-hidden">
               <div className="w-fit flex flex-col justify-center sm:flex-row items-center">
-
+           
                 {index === 1 && (
                   <motion.div
                     initial={{ rotateY: 0, scale: 0.8, opacity: 0.8 }}
