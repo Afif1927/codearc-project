@@ -2,13 +2,13 @@ import { useState } from "react";
 
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
-
+import "./NavbarStyle.css"
 export default function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
   return (
-    <div className="fixed sm:gap-14 z-[999] w-full px-5 py-8 sm:py-3 sm:px-28 flex justify-between items-center bg-slate-900 ">
+    <div className="navbar fixed sm:gap-10 z-[999] w-full px-5 py-8 sm:py-5 sm:px-28 rounded flex justify-between items-center  ">
 
       <div className="logo">
         <svg
@@ -42,17 +42,20 @@ export default function Navbar() {
       </div>
 
   
-      <div className="hidden md:flex gap-10">
+      <div className="hidden md:flex gap-7">
         {["Services", "Our Work", "About Us", "Insights", "Contact"].map(
           (item, index) => (
-            <a
-              key={index}
-              className={`text-lg capitalize cursor-pointer font-semibold ${
-                index === 4 && "ml-32"
-              }`}
-            >
-              {item}
-            </a>
+       
+
+      <a 
+      key={index}
+      className="text-lg capitalize cursor-pointer font-semibold px-6 py-3 rounded "
+      >
+       {item}
+    </a>
+
+
+
           )
         )}
       </div>
@@ -68,15 +71,12 @@ export default function Navbar() {
       {click && ( 
        
 
-        <div className="absolute top-16 w-full left-0 right-0 bg-slate-900 text-zinc-100 transition duration-300">
+        <div className=" md:hidden absolute top-16 w-full left-0 right-0 bg-slate-900 text-zinc-100 transition duration-300">
           {["Services", "Our Work", "About Us", "Insights", "Contact"].map(
             (item, index) => (
-
-
-
               <a
                 key={index}
-                className="flex sm:text-lg justify-center items-center my-6 font-mono text-[5vw] font-semibold py-6 border-b border-slate-800 transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-indigo-200 duration-300  hover:bg-gradient-to-r from-purple-500 to-pink-500"
+                className="flex sm:text-lg justify-center items-center my-6 font-mono text-[5vw] font-semibold py-6 border-b border-slate-800 "
               >
                 {item}
               </a>
