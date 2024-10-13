@@ -22,7 +22,7 @@ export default function About() {
         </div>
 
         <div className="w-full h-full  sm:h-[70vh]  rounded-3xl overflow-hidden">
-          <img className="w-full h-full object-cover" src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg" alt="Our Approach" />
+          <img className=" w-full h-full object-cover" src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-663x469.jpg" alt="Our Approach" />
         </div>
       </div>
     </div>
