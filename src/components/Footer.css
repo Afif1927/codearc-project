@@ -1,0 +1,44 @@
+/* .headingx h1 {
+  background: linear-gradient(
+    90deg,
+    #99fada,
+    #f8fc27
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+.painting a:nth-child(1) {
+  background: #3b5998;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.painting a:nth-child(2) {
+  background: rgb(41, 245, 58);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.painting a:nth-child(3) {
+  background: linear-gradient(
+    90deg,
+    #62a1f3,
+    purple
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.painting a:nth-child(4) {
+  background: #00aff0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.painting a:nth-child(5) {
+  background: #0077b5;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

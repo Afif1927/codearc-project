@@ -1,5 +1,5 @@
 
-
+import  './Footer.css'
 function Footer() {
   return (
     <div className="w-full h-auto flex flex-col sm:flex-row  gap-5  sm:h-screen bg-zinc-900  sm:p-20 py-36 px-10">
@@ -53,10 +53,10 @@ function Footer() {
         <h1 className="text-[10vw] sm:text-[6vw] uppercase font-semibold leading-none">
           Presentation
         </h1>
-        <div className="mt-5 sm:mt-10 flex gap-7 flex-col">
+        <div className=" painting mt-5 sm:mt-10 flex gap-7 flex-col">
         {["Facebook", "Whatsapp", "Instagram", "Skype", "Linkedin"].map(
           (item, index) => (
-            <a href="#" key={index} className="self-start inline-block text-xs sm:text-xl font-light  hover:border-b-2 hover:border-zinc-100">
+            <a href="#" key={index} className="self-start  inline-block text-xs sm:text-xl font-bold  hover:border-b-2 hover:border-zinc-100">
             {item}
           </a>
           
