@@ -5,117 +5,79 @@
   position: relative;
 }
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  animation: slideDown 2s ease-in-out;
+}
+
 .navbar a {
   position: relative;
   font: bold;
   text-decoration: none;
   text-transform: uppercase;
-  transition: 0.2s;
-}
-/* border bottom  */
-.navbar a:nth-child(1):after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 2px;
-  background: #03e9f4;
-  filter: none;
-  z-index: -1;
-}
-.navbar a:nth-child(2):after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 2px;
-  background: greenyellow;
-  filter: none;
-  z-index: -1;
-}
-.navbar a:nth-child(3):after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 2px;
-  background: rgb(255, 116, 255);
-  filter: none;
-  z-index: -1;
-}
-.navbar a:nth-child(4):after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 2px;
-  background: yellow;
-  filter: none;
-  z-index: -1;
-}
-.navbar a:nth-child(5):after {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 2px;
-  background: khaki;
-  filter: none;
-  z-index: -1;
-}
-.navbar a:hover:after {
-  opacity: 0;
+  transition: 0.6s;
 }
 
 .navbar a:hover {
   color: #050801;
 }
 
-.navbar a:hover:nth-child(1) {
+.navbar a:hover {
   background: #03e9f4;
-  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4,
-    0 0 50px #03e9f4, 0 0 200px #03e9f4;
-  -webkit-box-reflect: below 2px
-    linear-gradient(transparent, #0005);
-}
 
-.navbar a:hover:nth-child(2) {
-  background: greenyellow;
-  box-shadow: 0 0 5px greenyellow,
-    0 0 25px greenyellow, 0 0 50px greenyellow,
-    0 0 200px greenyellow;
   -webkit-box-reflect: below 1px
     linear-gradient(transparent, #0005);
 }
 
-.navbar a:hover:nth-child(3) {
-  background: rgb(255, 116, 255);
-  box-shadow: 0 0 5px rgb(255, 116, 255),
-    0 0 25px rgb(255, 116, 255),
-    0 0 50px rgb(255, 116, 255),
-    0 0 200px rgb(255, 116, 255);
-  -webkit-box-reflect: below 1px
-    linear-gradient(transparent, #0005);
+/* From Uiverse.io by satyamchaudharydev */
+/* === removing default button style ===*/
+.heading {
+  margin: 0;
+  height: auto;
+  color: white;
+  padding: 0;
+  border: none;
+  cursor: pointer;
 }
 
-.navbar a:hover:nth-child(4) {
-  background: yellow;
-  box-shadow: 0 0 5px yellow, 0 0 25px yellow,
-    0 0 50px yellow, 0 0 200px yellow;
-  -webkit-box-reflect: below 1px
-    linear-gradient(transparent, #0005);
-}
+/* button styling */
+.heading {
+  --border-right: 6px;
 
-.navbar a:hover:nth-child(5):hover {
-  background: khaki;
-  box-shadow: 0 0 5px khaki, 0 0 25px khaki,
-    0 0 50px khaki, 0 0 200px khaki;
-  -webkit-box-reflect: below 1px
-    linear-gradient(transparent, #0005);
+  --animation-color: #37ff8b;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
+  text-transform: uppercase;
+  color: white;
+}
+/* this is the text, when you hover on button */
+.hover-text {
+  position: absolute;
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid
+    var(--animation-color);
+  overflow: hidden;
+  transition: 0.4s;
+}
+/* hover */
+.heading:hover .hover-text {
+  width: 100%;
 }

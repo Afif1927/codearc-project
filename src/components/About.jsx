@@ -12,13 +12,11 @@ export default function About() {
         
 
         <div className="w-full md:w-1/2">
-          <h1 className="text-3xl flex px-10 sm:text-6xl md:text-3xl font-bold  justify-center  md:justify-start items-center">
-            Our approach:
-          </h1>
-          <button className="flex gap-4 sm:gap-10 items-center px-6 sm:px-10 mt-6 sm:mt-10 py-4 sm:py-6 bg-zinc-900 rounded-full text-white uppercase mx-auto md:mx-0">
-            Read More
-            <div className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-zinc-100"></div>
-          </button>
+      
+       <button className="flex gap-4 sm:gap-10 items-center px-6 sm:px-10 mt-6 sm:mt-0 py-4 sm:py-4  rounded-full text-white uppercase mx-auto md:mx-0
+       bg-black hover:bg-white  font-bold  shadow-lg hover:text-black shadow-white transform transition-all  duration-500 ease-in-out hover:scale-110 hover:brightness-160 hover:animate-pulse active:animate-bounce">
+      Our Approach
+    </button>
         </div>
 
         <div className="w-full h-full  sm:h-[70vh]  rounded-3xl overflow-hidden">

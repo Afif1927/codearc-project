@@ -24,5 +24,6 @@
 
 .bottom-to-top {
   animation: bottomToTop 2s ease-out forwards;
-  opacity: 0; /* Ensure it's hidden before animation starts */
+  opacity: 0; 
 }
+
