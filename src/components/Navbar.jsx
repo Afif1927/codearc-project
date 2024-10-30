@@ -11,16 +11,16 @@ export default function Navbar() {
 
       <div className="logo ">
 <div className="heading" data-text="Awesome">
-    <span className="actual-text font-bold">&nbsp;Ochi&nbsp;</span>
-    <span aria-hidden="true" className="hover-text  font-bold">&nbsp;OCHI&nbsp;</span>
+    <span className="actual-text font-bold">&nbsp;CodeArc&nbsp;</span>
+    <span aria-hidden="true" className="hover-text  font-bold">&nbsp;CodeArc&nbsp;</span>
 </div>
       </div>
-      <div className="hidden md:flex sm:gap-2 md:gap-7">
+      <div className="hidden md:flex sm:gap-2 md:gap-7 uppercase">
         {["Services", "Our Work", "About Us", "Insights", "Contact"].map(
           (item, index) => (
       <a 
       key={index}
-      className="sm:text-[1vw] md:text-[1.2vw] capitalize cursor-pointer font-semibold px-6 py-3 rounded "
+      className="sm:text-[1vw] md:text-[1.2vw]  uppercase cursor-pointer font-semibold px-6 py-3 rounded "
       >
        {item}
     </a>

@@ -189,8 +189,7 @@ export default function Footer () {
           <p className="text-sm text-gray-500">
             © Copyright 2020 Ochi Inc. All rights reserved.
           </p>
-  <div className="flex items-center mt-4  sm:mt-0">
-   <ul className="wrapper flex flex-col sm:flex-row gap-4 md:gap-7 ">
+  <div className="flex items-center  pt-10 sm:pt-0"><ul className="wrapper flex flex-row gap-4 md:gap-7 ">
 
 <li className="icon twitter ">
   <span className="tooltip">Twitter</span>

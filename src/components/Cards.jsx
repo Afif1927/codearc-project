@@ -1,5 +1,5 @@
-import React from 'react';
 
+import CodeArc from "../assets/codearc.png"
 function Cards() {
   return (
     <div className="w-full h-screen flex flex-col sm:flex-row items-center px-5 sm:px-14 gap-5 bg-zinc-900">
@@ -7,8 +7,8 @@ function Cards() {
       <div className="cardcontainer w-full sm:w-1/2 h-[30vh] sm:h-[45vh]  ">
         <div className="card relative w-full sm:h-[50vh] h-[30vh] rounded-xl flex items-center justify-center bg-[#004D43]  transition-transform duration-400 transform hover:scale-95">
           <img
-            className="w-20 md:w-32"
-            src="https://ochi.design/wp-content/uploads/2022/04/logo001.svg"
+            className="w-28 md:w-60 rounded border-zinc-100" 
+            src={CodeArc}
             alt="Logo 1"
           />
           <button className="absolute px-2 text-[3vw] sm:text-xs md:text-xs bottom-5 tracking-tight  rounded-full border-2   ">

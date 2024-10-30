@@ -1,213 +1,70 @@
-import { motion, useAnimation } from 'framer-motion';
-
-function Featured() {
-  const cards = [useAnimation(), useAnimation()];
-
-  const handleHover = (index) => {
-    cards[index].start({ y: "0" });
-  };
-
-  const handleHoverEnd = (index) => {
-    cards[index].start({ y: "100%" });
-  };
-
+export default function Featured  ()  {
   return (
-    <div className="w-full  py-20 bg-zinc-800">
+    <div className="px-4 py-16 mx-auto  sm:max-w-xl md:max-w-full md:px-24 lg:px-8 ">
 
-      <div className="w-full px-5 md:px-20 border-b-[1px] pb-10 md:pb-20 border-zinc-700">
-        <h1 className="text-3xl md:text-6xl lg:text-7xl font-mono tracking-tighter text-center md:text-left">
-          Featured projects
-        </h1>
+      <div className="grid gap-6 row-gap-5 mb-8 md:mb-0 sm:row-gap-6 sm:grid-cols-2">
+        <a href="#" aria-label="View Item">
+          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+            <img
+              className="object-cover w-full h-56 md:h-64 xl:h-80"
+              src="https://static.tildacdn.com/tild3864-6134-4336-b837-653931613231/Screenshot_2021-01-1.png"
+              alt=""
+            />
+            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+              <p className="text-sm font-medium tracking-wide text-white">
+                Sed ut perspiciatis unde omnis iste natus error
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="View Item">
+          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+            <img
+              className="object-cover w-full h-56 md:h-64 xl:h-80"
+              src="https://brightpinkagency.com/wp-content/uploads/2018/09/Cover-single-page-website-examples.jpg"
+              alt=""
+            />
+            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+              <p className="text-sm font-medium tracking-wide text-white">
+                Leverage agile frameworks to provide a robust synopsis
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="View Item">
+          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+            <img
+              className="object-cover w-full h-56 md:h-64 xl:h-80"
+              src="https://cdn.dribbble.com/userupload/11930555/file/original-a539cbd3e0d1edcb0e3026eb314b10bb.png?resize=400x300&vertical=center"
+              alt=""
+            />
+            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+              <p className="text-sm font-medium tracking-wide text-white">
+                Dingy Im telling you rhubaahb Bangah Jo-Jeezly
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="#" aria-label="View Item">
+          <div className="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+            <img
+              className="object-cover w-full h-56 md:h-64 xl:h-80"
+              src="https://static.tildacdn.com/tild6535-3261-4339-a435-633765623939/15.png"
+              alt=""
+            />
+            <div className="absolute inset-x-0 bottom-0 px-6 py-4 bg-black bg-opacity-75">
+              <p className="text-sm font-medium tracking-wide text-white">
+                Rough pomfret lemon shark plownose chimaera
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
-
-
-      <div className="px-5 md:px-20">
-{/* part-1 */}
-        <div className="cards w-full flex flex-col md:flex-row gap-5 md:gap-10 mt-10">  
-          <motion.div
-            className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[70vh]"
-            onHoverStart={() => handleHover(0)}
-            onHoverEnd={() => handleHoverEnd(0)}
-          >
-            <h1 className="absolute overflow-hidden flex md:right-0 
-            top-2/3  md:top-1/2 translate-x-1/2 -translate-y-1/2 leading-none text-[#CDEA68] tracking-tighter z-[9] text-5xl md:text-6xl lg:text-7xl font-semibold">
-              {"FYDE".split("").map((item, index) => (
-                <motion.span
-                  className="inline-block"
-                  key={index}
-                  initial={{ y: "100%" }}
-                  animate={cards[0]}
-                  transition={{ ease: [0.64, 0, 0.78, 0], delay: index * 0.03 }}
-                >
-                  {item}
-                </motion.span>
-              ))}
-            </h1>
-
-            <div className="card w-full h-full rounded-xl overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"
-                alt="Project FYDE"
-              />
-            </div>
-          </motion.div>
-          <motion.div
-            onHoverStart={() => handleHover(1)}
-            onHoverEnd={() => handleHoverEnd(1)}
-            className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[70vh]"
-          >
-            <h1 className="absolute overflow-hidden flex  md:right-full top-2/3  md:top-1/2 translate-x-1/2 -translate-y-1/2 leading-none text-[#CDEA68] tracking-tighter font-semibold z-[9] text-5xl md:text-6xl lg:text-7xl">
-              {"VISE".split("").map((item, index) => (
-                <motion.span
-                  className="inline-block"
-                  key={index}
-                  initial={{ y: "100%" }}
-                  animate={cards[1]}
-                  transition={{ ease: [0.64, 0, 0.78, 0], delay: index * 0.03 }}
-                >
-                  {item}
-                </motion.span>
-              ))}
-            </h1>
-
-            <div className="card w-full h-full rounded-xl overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg"
-                alt="Project VISE"
-              />
-            </div>
-          </motion.div>
-  </div>
-
-{/* //part-2 */}
-        <div className="cards w-full flex flex-col md:flex-row gap-5 md:gap-10 mt-10">
-          
-          <motion.div
-            className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[70vh]"
-            onHoverStart={() => handleHover(0)}
-            onHoverEnd={() => handleHoverEnd(0)}
-          >
-            <h1 className="absolute overflow-hidden flex left-full sm:right-0 
-            top-1/2  sm:top-1/2 -translate-x-2/3 -translate-y-1/2 leading-none text-[#CDEA68] tracking-tighter z-[9] text-5xl sm:text-6xl font-semibold">
-              {"ABOARDED SPACES".split("").map((item, index) => (
-                <motion.span
-                  className="inline-block"
-                  key={index}
-                  initial={{ y: "100%" }}
-                  animate={cards[0]}
-                  transition={{ ease: [0.64, 0, 0.78, 0], delay: index * 0.03 }}
-                >
-                  {item}
-                </motion.span>
-              ))}
-            </h1>
-
-            <div className="card w-full h-full rounded-xl overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://ochi.design/wp-content/uploads/2024/08/CS_Website_1-663x551.png"
-                alt="Project FYDE"
-              />
-            </div>
-          </motion.div>
-          <motion.div
-            onHoverStart={() => handleHover(1)}
-            onHoverEnd={() => handleHoverEnd(1)}
-            className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[70vh]"
-          >
-            <h1 className="absolute overflow-hidden flex  md:right-full top-2/3  md:top-1/2 translate-x-1/2 -translate-y-1/2 leading-none text-[#CDEA68] tracking-tighter font-semibold z-[9] text-5xl md:text-6xl lg:text-7xl">
-              {"H2 & MATTHORR".split("").map((item, index) => (
-                <motion.span
-                  className="inline-block"
-                  key={index}
-                  initial={{ y: "100%" }}
-                  animate={cards[1]}
-                  transition={{ ease: [0.64, 0, 0.78, 0], delay: index * 0.03 }}
-                >
-                  {item}
-                </motion.span>
-              ))}
-            </h1>
-
-            <div className="card w-full h-full rounded-xl overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://ochi.design/wp-content/uploads/2024/08/Frame-481692-1-663x551.png"
-                alt="Project VISE"
-              />
-            </div>
-          </motion.div> 
-           </div>
-
-{/* part-3 */}
-        <div className="cards w-full flex flex-col md:flex-row gap-5 md:gap-10 mt-10">
-          
-          <motion.div
-            className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[70vh]"
-            onHoverStart={() => handleHover(0)}
-            onHoverEnd={() => handleHoverEnd(0)}
-          >
-            <h1 className="absolute overflow-hidden flex md:right-0 
-            top-2/3  md:top-1/2 translate-x-1/2 -translate-y-1/2 leading-none text-[#CDEA68] tracking-tighter z-[9] text-5xl md:text-6xl lg:text-7xl font-semibold">
-              {"trawa".split("").map((item, index) => (
-                <motion.span
-                  className="inline-block"
-                  key={index}
-                  initial={{ y: "100%" }}
-                  animate={cards[0]}
-                  transition={{ ease: [0.64, 0, 0.78, 0], delay: index * 0.03 }}
-                >
-                  {item}
-                </motion.span>
-              ))}
-            </h1>
-
-            <div className="card w-full h-full rounded-xl overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://ochi.design/wp-content/uploads/2023/08/Frame-3875-663x551.jpg"
-                alt="Project FYDE"
-              />
-            </div>
-          </motion.div>
-    
-          <motion.div
-            onHoverStart={() => handleHover(1)}
-            onHoverEnd={() => handleHoverEnd(1)}
-            className="cardcontainer relative w-full md:w-1/2 h-[50vh] md:h-[70vh]"
-          >
-            <h1 className="absolute overflow-hidden flex  md:right-full top-2/3  md:top-1/2 translate-x-1/2 -translate-y-1/2 leading-none text-[#CDEA68] tracking-tighter font-semibold z-[9] text-5xl md:text-6xl lg:text-7xl">
-              {"Premium Blend".split("").map((item, index) => (
-                <motion.span
-                  className="inline-block"
-                  key={index}
-                  initial={{ y: "100%" }}
-                  animate={cards[1]}
-                  transition={{ ease: [0.64, 0, 0.78, 0], delay: index * 0.03 }}
-                >
-                  {item}
-                </motion.span>
-              ))}
-            </h1>
-
-            <div className="card w-full h-full rounded-xl overflow-hidden">
-              <img
-                className="w-full h-full object-cover"
-                src="https://ochi.design/wp-content/uploads/2022/12/PB-Front-4-663x551.png"
-                alt="Project VISE"
-              />
-            </div>
-          </motion.div>
-
-
-
-          
-        </div>
+      <div className="text-center  md:pt-16">
+      <button className="cursor-pointer  text-white font-bold relative text-[14px] w-[9em] h-[3em] text-center bg-gradient-to-r from-violet-500 from-10% via-sky-500 via-30% to-pink-500 to-90% bg-[length:400%] rounded-[30px] z-10 hover:animate-gradient-xy hover:bg-[length:100%] before:content-[''] before:absolute before:-top-[5px] before:-bottom-[5px] before:-left-[5px] before:-right-[5px] before:bg-gradient-to-r before:from-violet-500 before:from-10% before:via-sky-500 before:via-30% before:to-pink-500 before:bg-[length:400%] before:-z-10 before:rounded-[35px] before:hover:blur-xl before:transition-all before:ease-in-out before:duration-[1s] before:hover:bg-[length:10%] active:bg-violet-700 focus:ring-violet-700">
+      See More ....
+    </button>
       </div>
     </div>
   );
-}
-
-export default Featured;
+};

@@ -13,7 +13,7 @@ function Marquee() {
                     ease:"linear",
                     repeat: Infinity,        
               
-                  }} className='text-[22vw] leading-none font-sherif font-semibold uppercase '>We Are Ochi </motion.h1>
+                  }} className='text-[22vw] leading-none font-sherif font-semibold uppercase '>Welcome to CodeArc</motion.h1>
             <motion.h1 
                initial={{ x:"0"}}
                animate={{x:"-100%" }}
@@ -23,7 +23,7 @@ function Marquee() {
                  repeat: Infinity,        
              }}
             className='text-[22vw]  
-            leading-none font-sherif font-semibold uppercase '>We Are Ochi</motion.h1>
+            leading-none font-sherif font-semibold uppercase '>Welcome to CodeArc</motion.h1>
         </div>
     </div>
   )
