@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion';
-import React from 'react';
-import { FaArrowUpLong } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 import "./LandingStyle.css"
 export default function LandingPage() {
+  const navigate = useNavigate();
+  const goToLogForm = () => {
+    navigate("/login-form");
+  };
   return (
     <div data-scroll data-scroll-section data-scroll-speed="-.4" className="w-full h-screen flex flex-col  bg-zinc-900 pt-1">
 
@@ -51,6 +54,7 @@ export default function LandingPage() {
         <div className=" flex flex-col cursor-pointer md:flex-row items-center  gap-3 md:gap-1 ">
         <button
       type="submit"
+      onClick={goToLogForm}
       className="flex justify-center gap-2 items-center mx-auto shadow-xl text-sm text-black bg-gray-50 backdrop-blur-md font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-emerald-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-100 relative z-10 px-4 py-1 overflow-hidden border-2 rounded-full group"
     >
       Start the Project 
