@@ -1,11 +1,12 @@
 import { useState } from "react";
-
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
+import { Link } from "react-router-dom";
 import "./NavbarStyle.css";
 export default function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+
   return (
     <div className='navbar lg:fixed  sticky  sm:gap-10 z-[999] w-full px-5 py-8 sm:py-5 sm:px-28 rounded flex justify-between items-center text-center text-wrap  '>
       <div className='logo '>
@@ -26,18 +27,19 @@ export default function Navbar() {
       </div>
       <div className='hidden lg:flex sm:gap-2 md:gap-7 uppercase'>
         {[
-          "Services",
-          "Our Work",
-          "About Us",
-          "Insights",
-          "Contact",
+          { name: "Services", path: "/services" },
+          { name: "Our Work", path: "/our-work" },
+          { name: "About Us", path: "/about-us" },
+          { name: "Insights", path: "/insights" },
+          { name: "Contact", path: "/contact" },
         ].map((item, index) => (
-          <a
+          <Link
             key={index}
-            className='sm:text-[1vw] md:text-[1.2vw]  uppercase cursor-pointer font-semibold px-6 py-3 rounded '
+            to={item.path}
+            className='sm:text-[1vw] md:text-[1.2vw] uppercase cursor-pointer font-semibold px-6 py-3 rounded'
           >
-            {item}
-          </a>
+            {item.name}
+          </Link>
         ))}
       </div>
       <div className='lg:hidden'>
