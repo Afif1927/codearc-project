@@ -55,18 +55,31 @@ export default function Navbar() {
       {click && (
         <div className=' lg:hidden  absolute top-20 w-full left-0 right-0 bg-slate-900 text-zinc-100 transition duration-300 shadow-2xl'>
           {[
-            "Services",
-            "Our Work",
-            "About Us",
-            "Insights",
-            "Contact",
+            {
+              name: "Services",
+              path: "/services",
+            },
+            {
+              name: "Our Work",
+              path: "/our-work",
+            },
+            {
+              name: "About Us",
+              path: "/about-us",
+            },
+            {
+              name: "Insights",
+              path: "/insights",
+            },
+            { name: "Contact", path: "/contact" },
           ].map((item, index) => (
-            <a
+            <Link
               key={index}
-              className='flex sm:text-lg justify-center items-center  font-mono text-[5vw] font-semibold py-4 border-b border-slate-800 '
+              to={item.path}
+              className='flex sm:text-lg justify-center items-center  font-mono text-[5vw] font-semibold py-4 border-b border-slate-800'
             >
-              {item}
-            </a>
+              {item.name}
+            </Link>
           ))}
         </div>
       )}
