@@ -4,7 +4,7 @@ import { GrResources } from "react-icons/gr";
 import { IoMdArchive } from "react-icons/io";
 function InsightsRoute() {
   return (
-    <div className='bg-zinc-900 pt-5 sm:pt-10 lg:pt-28'>
+    <div className='bg-zinc-900 pt-0 sm:pt-10 lg:pt-28'>
       <div className='image h-20 sm:h-24 md:h-28 lg:h-36 '>
         <img
           className='object-cover w-full h-full'

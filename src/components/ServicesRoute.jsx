@@ -1,7 +1,7 @@
 function ServicesRoute() {
   return (
     <div className='bg-zinc-900  md:bg-zinc-600 lg:bg-zinc-900 pt-5 sm:pt-10 md:pt-20'>
-      <div className='part-1 flex flex-col  justify-center items-center px-3  py-4 sm:gap-5'>
+      <div className='part-1 flex flex-col  justify-center items-center px-3  py-4 gap-5'>
         <div className='sub-1 flex flex-col gap-5 justify-center items-center px-5 pt-3'>
           <h1 className='text text-center text-slate-100 text-[2rem] sm:text-[2.2rem] md:text-[2.4rem] lg:text-[2.6rem] font-bold font-mono leading-none '>
             Our Services
@@ -15,7 +15,7 @@ function ServicesRoute() {
         </div>
 
         <img
-          className='rounded w-full h-[300px] md:h-[450px]  lg:h-[600px] object-contain '
+          className=' pt-5  rounded w-full h-[300px] md:h-[450px]  lg:h-[600px] object-contain '
           src='https://images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/4d4e1c0ad7a15ecda065e3ff/x-min1.jpg'
           alt=''
         />
