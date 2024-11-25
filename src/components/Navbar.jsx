@@ -2,15 +2,20 @@ import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./NavbarStyle.css";
 export default function Navbar() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
-
+  const navigate = useNavigate();
+  const HomePage = () => {
+    navigate("/");
+  };
   return (
     <div className='navbar lg:fixed  sticky  sm:gap-10 z-[999] w-full px-5 py-8 sm:py-5 sm:px-28 rounded flex justify-between items-center text-center text-wrap  '>
       <div className='logo '>
         <div
+          onClick={HomePage}
           className='heading'
           data-text='Awesome'
         >

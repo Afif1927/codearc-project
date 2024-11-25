@@ -10,7 +10,7 @@ export default function ContactRoute() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className='isolate text-zinc-100 bg-zinc-900 px-6 py-10 sm:py-16 lg:px-8'>
+    <div className='isolate text-zinc-100 bg-zinc-900 px-6 py-10 sm:py-16 lg:px-8 pt-5 sm:pt-10 lg:pt-24'>
       <div
         aria-hidden='true'
         className='absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]'

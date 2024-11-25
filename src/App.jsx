@@ -31,6 +31,10 @@ function App() {
 
   return (
     <Router>
+      <div className='w-full text-white bg-zinc-900'>
+        <Navbar />
+      </div>
+
       <Routes>
         <Route
           path='/login-form'
@@ -64,7 +68,6 @@ function App() {
           path='/'
           element={
             <div className='w-full min-h-screen text-white bg-zinc-900'>
-              <Navbar />
               <LandingPage />
               <Marquee />
               <About />
