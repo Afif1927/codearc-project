@@ -1,91 +1,120 @@
-import React from "react";
-
+import { FaRegStar } from "react-icons/fa";
+import { MdTaskAlt } from "react-icons/md";
+import { GrResources } from "react-icons/gr";
+import { IoMdArchive } from "react-icons/io";
 function InsightsRoute() {
   return (
-    <div className='bg-zinc-900  md:bg-zinc-600 lg:bg-zinc-900'>
-      <div className='part-1 flex flex-col  justify-center items-center px-3  py-4 sm:gap-5'>
-        <div className='sub-1 flex flex-col gap-5 justify-center items-center px-5 pt-3'>
-          <h1 className='text text-center text-slate-100 text-[2rem] sm:text-[2.2rem] md:text-[2.4rem] lg:text-[2.6rem] font-bold font-mono leading-none '>
-            Our Services
-          </h1>
-          <p className='font-mono text-center text-[0.6rem] sm:text-[0.9rem] md:text-[1rem] lg:text-[1.2rem] font-medium text-slate-300'>
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Image from
-          </p>
-        </div>
-
+    <div className='bg-zinc-900'>
+      <div className='image h-20 sm:h-24 md:h-28 lg:h-36'>
         <img
-          className='rounded w-full h-[300px] md:h-[450px]  lg:h-[600px] object-contain '
-          src='https://images02.nicepagecdn.com/c461c07a441a5d220e8feb1a/4d4e1c0ad7a15ecda065e3ff/x-min1.jpg'
+          className='object-cover w-full h-full'
+          src='https://png.pngtree.com/background/20210709/original/pngtree-technology-electronic-financial-background-picture-image_911025.jpg'
           alt=''
         />
       </div>
-      <div className='part-2 grid items-center px-8 md:py-5 md:grid-cols-2 gap-6 py-3  lg:py-10 '>
-        <div className='sub-part1 flex flex-col  hover:bg-slate-700 gap-4 md:gap-6 px-8  md:py-5'>
-          <img
-            className='object-contain max-h-14 sm:max-h-16 md:max-h-20 lg:max-h-24  w-full'
-            src='https://www.svgrepo.com/show/228242/idea-brain.svg'
-            alt=''
-          />
-          <h2 className='text text-center  text-slate-100 text-[1.1rem] sm:text-[1.2rem] md:text-[1.5rem] lg-text-[1.8rem] font-bold font-mono leading-none'>
-            Growth strategy
-          </h2>
-          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 md:px-24'>
-            Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur
+      <div className='w-full my-10 border bg-zinc-400'></div>
+      <div className='part-1 text-zinc-100 flex flex-col gap-4 md:gap-8 px-4 sm:px-8 md:px-14 lg:px-20'>
+        <h1 className='text-[1.5rem] sm:text-[1.6rem] md:text-[1.7rem] lg:text-[2.5rem]'>
+          Insights{" "}
+        </h1>
+        <p className='text-[0.7rem] sm:text-[0.8rem] md:[text-0.9rem]  lg:text-[1rem] font-mono'>
+          Below is the template for insights, a
+          new template for the PARA Method created
+          by James Porteous.
+        </p>
+        <p className='text-[0.7rem] sm:text-[0.8rem] md:[text-0.9rem]  lg:text-[1rem] font-mono'>
+          As you will read{" "}
+          <span className='text-zinc-500'>
+            elsewhere
+          </span>
+          , the PARA Method is "a system that
+          tells you exactly where to put every
+          piece of information in your life -
+          every document, file, note, agenda,
+          outline, and bit of information you
+          might wish to keep."
+        </p>
+        <p className='text-[0.7rem] sm:text-[0.8rem] md:[text-0.9rem]  lg:text-[1rem] font-mono'>
+          The original was based on the following
+          sections:
+        </p>
+        <img
+          className='object-contain w-full md:h-96 '
+          src='https://towering-perigee-2e2.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fefa9eb2f-ffc3-4208-a27f-139f9089dd6d%2FUntitled.png?table=block&id=577a5f51-d206-4750-bfcc-62191003a2ba&spaceId=14191d96-dc01-4bbf-ae1f-7adc79b6ee30&width=1420&userId=&cache=v2'
+          alt=''
+        />
+        <p className='text-[0.7rem] sm:text-[0.8rem] md:[text-0.9rem]  lg:text-[1rem] font-mono'>
+          There are many copies of this template
+          available online.
+        </p>
+        <p className='text-[0.7rem] sm:text-[0.8rem] md:[text-0.9rem]  lg:text-[1rem] font-mono'>
+          For example, instead of saying that ‘an
+          object can be placed here. Think of it
+          as being an image,’ just call it an
+          image. Additionally, I did not think
+          ‘Area’ and ‘Resource’ really meant
+          anything, and I did not want to refer to
+          a list every time I wanted to add
+          something.
+        </p>
+        <p className='text-[0.7rem] sm:text-[0.8rem] md:[text-0.9rem]  lg:text-[1rem] font-mono'>
+          If you wish to use this template, you
+          can of course change anything you wish.
+          Once you have looked around, you can
+          also delete any information that appears
+          above the line.
+        </p>
+      </div>
+      <div className='w-full my-10 border bg-zinc-400'></div>
+      <div className='part-2 flex flex-col gap-5 text-zinc-100 mt-4 px-4 sm:px-8 md:px-14 lg:px-20'>
+        <h1 className='text-[1.5rem] sm:text-[1.6rem] md:text-[1.7rem] lg:text-[2.5rem]'>
+          Insights{" "}
+        </h1>
+        <div className='container-1 py-3 flex flex-col gap-3 '>
+          <div className='sub-1 flex gap-1 items-center text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem] bg-slate-500'>
+            <FaRegStar /> <span>iProjects</span>
+          </div>
+          <p className='text-[#ff7571] text-[0.7rem] sm:text-[0.8rem] md:[text-0.9rem]  lg:text-[1rem] font-mono '>
+            A collection of tasks that are
+            connected to a goal and have a set
+            deadline or concrete activities you
+            want to or need to do.
           </p>
         </div>
-        <div className='sub-part2 flex flex-col  hover:bg-slate-700 gap-4 md:gap-6 px-8  md:py-5'>
-          <img
-            className='object-contain max-h-14 sm:max-h-16 md:max-h-20 lg:max-h-24  w-full'
-            src='https://www.svgrepo.com/show/288470/medal-quality.svg'
-            alt=''
-          />
-          <h2 className='text text-center  text-slate-100 text-[1.1rem] sm:text-[1.2rem] md:text-[1.5rem] lg-text-[1.8rem] font-bold font-mono leading-none'>
-            Quality Expertise
-          </h2>
-          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 md:px-24'>
-            Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur
+        <div className='container-2 py-3 flex flex-col gap-3 '>
+          <div className='sub-1 flex gap-1 items-center text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem] bg-slate-500'>
+            <MdTaskAlt />
+            <span>iTask</span>
+          </div>
+          <p className='text-[#ff7571] text-[0.7rem] sm:text-[0.8rem] md:[text-0.9rem]  lg:text-[1rem] font-mono '>
+            The iTask section represents ongoing
+            activities with no set deadline. So
+            things like finances, writing, sales,
+            health.
           </p>
         </div>
-        <div className='sub-part3 flex flex-col  hover:bg-slate-700 gap-4 md:gap-6 px-8  md:py-5'>
-          <img
-            className='object-contain max-h-14 sm:max-h-16 md:max-h-20 lg:max-h-24  w-full'
-            src='https://www.svgrepo.com/show/530452/mobile-app.svg'
-            alt=''
-          />
-          <h2 className='text text-center text-slate-100 text-[1.1rem] sm:text-[1.2rem] md:text-[1.5rem] lg-text-[1.8rem] font-bold font-mono leading-none '>
-            Responsiveness
-          </h2>
-          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 md:px-24'>
-            Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur
+        <div className='container-3 py-3 flex flex-col gap-3 '>
+          <div className='sub-1 flex gap-1 items-center text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem] bg-slate-500'>
+            <GrResources />{" "}
+            <span>iResources</span>
+          </div>
+          <p className='text-[#ff7571] text-[0.7rem] sm:text-[0.8rem] md:[text-0.9rem]  lg:text-[1rem] font-mono '>
+            Information about topics that are
+            interesting or useful to you.
           </p>
-        </div>{" "}
-        <div className='sub-part4 flex flex-col  hover:bg-slate-700 gap-4 md:gap-6 px-8  md:py-5'>
-          <img
-            className='object-contain max-h-14 sm:max-h-16 md:max-h-20 lg:max-h-24  w-full'
-            src='https://www.svgrepo.com/show/293550/customer-service-support.svg'
-            alt=''
-          />
-          <h2 className='text text-center text-slate-100 text-[1.1rem] sm:text-[1.2rem] md:text-[1.5rem] lg-text-[1.8rem] font-bold font-mono leading-none '>
-            Support 24/7
-          </h2>
-          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 md:px-24'>
-            Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur
+        </div>
+        <div className='container-4 py-3 flex flex-col gap-3 '>
+          <div className='sub-1 flex gap-1 items-center text-[1rem] sm:text-[1.2rem] md:text-[1.3rem] lg:text-[1.5rem] bg-slate-500'>
+            <IoMdArchive /> <span>iArchive</span>
+          </div>
+          <p className='text-[#ff7571] text-[0.7rem] sm:text-[0.8rem] md:[text-0.9rem]  lg:text-[1rem] font-mono '>
+            Items from the other three categories
+            that have been completed or are no
+            longer active.
           </p>
         </div>
       </div>
-
-      <div className=' Footer bg-gray-900'>
+      <div className=' Footer bg-gray-900 mt-8'>
         <div className='  text-white py-10'>
           <div className='text-center'>
             <h3 className='text-[1rem] sm:text-[1.1rem] md:text-[1.3rem] lg:text-[1.5rem]'>
