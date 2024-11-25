@@ -4,7 +4,7 @@ import { GrResources } from "react-icons/gr";
 import { IoMdArchive } from "react-icons/io";
 function InsightsRoute() {
   return (
-    <div className='bg-zinc-900 pt-0 sm:pt-10 lg:pt-28'>
+    <div className='bg-radial pt-0 sm:pt-10 lg:pt-28'>
       <div className='image h-20 sm:h-24 md:h-28 lg:h-36 '>
         <img
           className='object-cover w-full h-full'
@@ -114,44 +114,42 @@ function InsightsRoute() {
           </p>
         </div>
       </div>
-      <div className=' Footer bg-gray-900 mt-8'>
+      <div className='Footer bg-gray-900'>
         <div className='  text-white py-10'>
           <div className='text-center'>
-            <h3 className='text-[1rem] sm:text-[1.1rem] md:text-[1.3rem] lg:text-[1.5rem]'>
-              {" "}
-              Download our CodeArc app{" "}
+            <h3 className='text-[1rem] tracking-wider sm:text-[1.1rem] md:text-[1.3rem] lg:text-[1.5rem]'>
+              Download our CodeArc app
             </h3>
             <p className='text-[0.6rem]  sm:text-[.7rem] md:text-[.9rem] lg:text-[1rem]'>
               {" "}
               Make Beautiful Projects. All day,
               every day.{" "}
             </p>
-            <div className='flex justify-center my-5 md:my-7'>
+            <div className='flex justify-center gap-2 my-5 md:my-7'>
               <div className='flex flex-col  items-center  border gap-1  w-auto rounded-lg px-4 py-2  '>
                 <img
                   src='https://cdn-icons-png.flaticon.com/512/888/888857.png'
-                  className='w-7 md:w-10'
+                  className='w-7 md:w-8'
                 ></img>
                 <div className='text-center '>
                   <p className='text-[0.5rem] md:text-base text-gray-200'>
                     Download on
                   </p>
-                  <p className='text-[0.5rem] md:text-base'>
-                    {" "}
-                    Google Play Store{" "}
+                  <p className='text-[0.5rem] md:text-[0.8rem]'>
+                    Google Play Store
                   </p>
                 </div>
               </div>
               <div className='flex items-center border flex-col  gap-1 rounded-lg px-4 py-2  '>
                 <img
                   src='https://cdn-icons-png.flaticon.com/512/888/888841.png'
-                  className='w-7 md:w-10'
+                  className='w-7 md:w-8'
                 ></img>
                 <div className='text-center '>
                   <p className='text-[0.5rem]  md:text-base text-gray-200'>
                     Download on{" "}
                   </p>
-                  <p className='text-[0.5rem] md:text-base'>
+                  <p className='text-[0.5rem] md:text-[0.8rem]'>
                     {" "}
                     Apple Store{" "}
                   </p>
@@ -160,7 +158,7 @@ function InsightsRoute() {
             </div>
           </div>
           <div className=' flex flex-col sm:flex-row sm:justify-between items-center sm:mx-5 text-gray-400'>
-            <p className='order-2 text-[0.7rem] sm:text-[0.8rem] md:text-[0.9rem] md:order-1  md:mt-0'>
+            <p className='order-2 text-[0.7rem] sm:text-[0.8rem] md:text-[0.9rem] md:order-1  '>
               &copy; CodeArc Is Best, 2024.
             </p>
             <div className='order-1 md:order-2'>

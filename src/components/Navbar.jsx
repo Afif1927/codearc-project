@@ -1,11 +1,19 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { CiMenuFries } from "react-icons/ci";
-import { Link } from "react-router-dom";
+import {
+  Link,
+  useLocation,
+} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./NavbarStyle.css";
 export default function Navbar() {
   const [click, setClick] = useState(false);
+
+  const location = useLocation();
+  useEffect(() => {
+    setClick(false);
+  }, [location]);
   const handleClick = () => setClick(!click);
   const navigate = useNavigate();
   const HomePage = () => {

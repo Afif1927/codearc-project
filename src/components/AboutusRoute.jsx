@@ -1,6 +1,6 @@
 function AboutusRoute() {
   return (
-    <div className='bg-zinc-900 h-auto w-full pt-0 lg:pt-10 '>
+    <div className='bg-radial h-auto w-full pt-0 lg:pt-10 '>
       <div className='part-1 flex flex-col md:flex-row items-center  justify-center  px-3  py-4 md:py-16 sm:gap-5'>
         <div className='sub-1 flex flex-col gap-5 justify-center md:justify-start items-center  px-5 py-3'>
           <h1 className='text  text-center flex justify-center item-center text-slate-100 text-[2rem] sm:text-[2.2rem] md:text-[2.4rem] lg:text-[2.8rem] font-bold font-mono leading-none '>
@@ -38,7 +38,7 @@ function AboutusRoute() {
               Make Beautiful Projects. All day,
               every day.{" "}
             </p>
-            <div className='flex justify-center gap-5 my-5 md:my-7'>
+            <div className='flex justify-center gap-2 my-5 md:my-7'>
               <div className='flex flex-col  items-center  border gap-1  w-auto rounded-lg px-4 py-2  '>
                 <img
                   src='https://cdn-icons-png.flaticon.com/512/888/888857.png'
