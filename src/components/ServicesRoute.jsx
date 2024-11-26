@@ -1,7 +1,7 @@
 function ServicesRoute() {
   return (
-    <div className='bg-radial  md:bg-zinc-600 lg:bg-zinc-900 pt-5 sm:pt-10 md:pt-20'>
-      <div className='part-1 flex flex-col  justify-center items-center px-3  py-4 gap-5'>
+    <div className='bg-radial  md:bg-zinc-600 lg:bg-zinc-900 pt-5 sm:pt-10 md:pt-28'>
+      <div className='part-1 flex flex-col  justify-center items-center px-3  py-4 gap-5 md:gap-7'>
         <div className='sub-1 flex flex-col gap-5 justify-center items-center px-5 pt-3'>
           <h1 className='text text-center text-slate-100 text-[2rem] sm:text-[2.2rem] md:text-[2.4rem] lg:text-[2.6rem] font-bold font-mono leading-none '>
             Our Services
