@@ -152,20 +152,23 @@ function AboutusRoute() {
               </div>
 
               <p className='mt-4 text-gray-700'>
-                Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit.
-                Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe
-                illo est quia obcaecati neque
-                quibusdam eius accusamus error
-                officiis atque voluptates magnam!
+                This website is a perfect example
+                of great design meeting
+                functionality. Everything from the
+                sleek, modern interface to the
+                intuitive navigation made my
+                experience delightful. The
+                responsiveness is
+                top-notch—seamlessly adapting to
+                all devices without losing any
+                quality.
               </p>
             </blockquote>
             <blockquote className='rounded-lg bg-indigo-300 p-6 shadow-sm sm:p-8'>
               <div className='flex items-center gap-4'>
                 <img
                   alt=''
-                  src='https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80'
+                  src='https://images.unsplash.com/photo-1543060829-a0029874b174?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fHNtaWxleSUyMGJ1c2luZXNzfGVufDB8fDB8fHww'
                   className='size-14 rounded-full object-cover'
                 />
 
@@ -214,27 +217,28 @@ function AboutusRoute() {
                   </div>
 
                   <p className='mt-0.5 text-lg font-medium text-gray-900'>
-                    Paul Starr
+                    Mitchel Fourts
                   </p>
                 </div>
               </div>
 
               <p className='mt-4 text-gray-700'>
-                Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit.
-                Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe
-                illo est quia obcaecati neque
-                quibusdam eius accusamus error
-                officiis atque voluptates magnam!
+                This website exceeded my
+                expectations in every way! The
+                clean layout and modern design are
+                incredibly appealing, and
+                navigating through the pages is a
+                breeze. It’s fast, functional, and
+                visually stunning—highly
+                recommended!
               </p>
             </blockquote>
             <blockquote className='rounded-lg bg-indigo-300 p-6 shadow-sm sm:p-8'>
               <div className='flex items-center gap-4'>
                 <img
                   alt=''
-                  src='https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80'
-                  className='size-14 rounded-full object-cover'
+                  src='https://plus.unsplash.com/premium_photo-1661583687357-f047d7f7b399?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c21pbGV5JTIwYnVzaW5lc3MlMjB3b21lbnxlbnwwfHwwfHx8MA%3D%3D'
+                  className='size-14 rounded-full object-cover bg-center'
                 />
 
                 <div>
@@ -282,19 +286,20 @@ function AboutusRoute() {
                   </div>
 
                   <p className='mt-0.5 text-lg font-medium text-gray-900'>
-                    Paul Starr
+                    Jenny Anderssen
                   </p>
                 </div>
               </div>
 
               <p className='mt-4 text-gray-700'>
-                Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit.
-                Culpa sit rerum incidunt, a
-                consequuntur recusandae ab saepe
-                illo est quia obcaecati neque
-                quibusdam eius accusamus error
-                officiis atque voluptates magnam!
+                Absolutely love this site! It’s
+                incredibly user-friendly and
+                provides a seamless experience.
+                The attention to detail is evident
+                in every feature, and the site
+                feels robust yet lightweight. The
+                design is not only visually
+                pleasing but also very practical.
               </p>
             </blockquote>
           </div>

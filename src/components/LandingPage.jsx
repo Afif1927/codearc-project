@@ -70,7 +70,7 @@ export default function LandingPage() {
           return (
             <p
               key={index}
-              className='sm:text-sm  font-semibold tracking-tight leading-none text-center '
+              className='text-[0.8rem]  sm:text-[9rem] md:text-[1rem]  font-semibold tracking-tight leading-none text-center '
             >
               {item}
             </p>

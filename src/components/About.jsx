@@ -7,7 +7,7 @@ export default function About() {
       data-scroll-speed='-.1'
       className='w-full p-5 sm:p-10 md:p-20 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black'
     >
-      <h1 className='text-[3vw] sm:text-[3.5vw] font-semibold md:text-[1.8rem] leading-tight  md:leading-[3.5vw] font-mono tracking-tight text-center md:text-left'>
+      <h1 className='text-[0.9rem] sm:text-[3.5vw] font-semibold md:text-[1.8rem] sm:leading-[2rem] md:leading-[2.5rem]  font-mono tracking-tight text-center md:text-left'>
         CodeArc is an innovative platform for
         website design and development, blending
         user-friendly tools with advanced tech. It

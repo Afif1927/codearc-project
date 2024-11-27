@@ -4,15 +4,15 @@ import { GrResources } from "react-icons/gr";
 import { IoMdArchive } from "react-icons/io";
 function InsightsRoute() {
   return (
-    <div className='bg-radial pt-0 sm:pt-10 lg:pt-28'>
-      <div className='image h-20 sm:h-24 md:h-28 lg:h-36 '>
+    <div className='bg-radial pt-0 sm:pt-0  lg:pt-20'>
+      <div className='image h-20 sm:h-32 md:h-40 lg:h-44 '>
         <img
           className='object-cover w-full h-full'
           src='https://png.pngtree.com/background/20210709/original/pngtree-technology-electronic-financial-background-picture-image_911025.jpg'
           alt=''
         />
       </div>
-      <div className='w-full  my-8  border bg-zinc-100 opacity-40'></div>
+      <div className='w-full my-2  sm:my-4 md:my-6 lg:my-8  border bg-zinc-100 opacity-40'></div>
       <div className='part-1 text-zinc-100 flex flex-col gap-4 md:gap-8 px-4 sm:px-8 md:px-14 lg:px-20'>
         <h1 className='text-[1.5rem] sm:text-[1.6rem] md:text-[1.7rem] lg:text-[2.5rem]'>
           Insights{" "}

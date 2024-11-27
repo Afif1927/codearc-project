@@ -30,7 +30,7 @@ function ServicesRoute() {
           <h2 className='text text-center  text-slate-100 text-[1.1rem] sm:text-[1.2rem] md:text-[1.5rem] lg-text-[1.8rem] font-bold font-mono leading-none'>
             Growth strategy
           </h2>
-          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 md:px-24'>
+          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 lg:px-20'>
             Duis aute irure dolor in reprehenderit
             in voluptate velit esse cillum dolore
             eu fugiat nulla pariatur
@@ -45,7 +45,7 @@ function ServicesRoute() {
           <h2 className='text text-center  text-slate-100 text-[1.1rem] sm:text-[1.2rem] md:text-[1.5rem] lg-text-[1.8rem] font-bold font-mono leading-none'>
             Quality Expertise
           </h2>
-          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 md:px-24'>
+          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 lg:px-20'>
             Duis aute irure dolor in reprehenderit
             in voluptate velit esse cillum dolore
             eu fugiat nulla pariatur
@@ -60,7 +60,7 @@ function ServicesRoute() {
           <h2 className='text text-center text-slate-100 text-[1.1rem] sm:text-[1.2rem] md:text-[1.5rem] lg-text-[1.8rem] font-bold font-mono leading-none '>
             Responsiveness
           </h2>
-          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 md:px-24'>
+          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 lg:px-20'>
             Duis aute irure dolor in reprehenderit
             in voluptate velit esse cillum dolore
             eu fugiat nulla pariatur
@@ -75,7 +75,7 @@ function ServicesRoute() {
           <h2 className='text text-center text-slate-100 text-[1.1rem] sm:text-[1.2rem] md:text-[1.5rem] lg-text-[1.8rem] font-bold font-mono leading-none '>
             Support 24/7
           </h2>
-          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 md:px-24'>
+          <p className='font-mono text-center text-[0.5rem]  sm:text-[.7rem] md:text-[.8rem] lg-text-[1rem] font-medium text-slate-300 lg:px-20'>
             Duis aute irure dolor in reprehenderit
             in voluptate velit esse cillum dolore
             eu fugiat nulla pariatur

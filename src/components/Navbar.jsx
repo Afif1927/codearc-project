@@ -38,7 +38,7 @@ export default function Navbar() {
           </span>
         </div>
       </div>
-      <div className='hidden lg:flex sm:gap-2 md:gap-7 uppercase'>
+      <div className='hidden lg:flex sm:gap-2 md:gap-7 uppercase flex items-center justify-center'>
         {[
           { name: "Services", path: "/services" },
           { name: "Our Work", path: "/our-work" },
@@ -49,7 +49,7 @@ export default function Navbar() {
           <Link
             key={index}
             to={item.path}
-            className='sm:text-[1vw] md:text-[1.2vw] uppercase cursor-pointer font-semibold px-6 py-3 rounded'
+            className='sm:text-[1vw] md:text-[1.2vw] uppercase  cursor-pointer font-semibold px-6 py-3 rounded'
           >
             {item.name}
           </Link>
